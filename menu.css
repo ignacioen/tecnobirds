@@ -1,0 +1,57 @@
+         @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap');
+         @import url('https://fonts.googleapis.com/css2?family=Oregano&display=swap');
+         /* seccion 2 de main empieza ********************************************************************************************/
+         /* contenedor principal de la seccion */
+         
+         .container__menus {
+             width: 90%;
+             max-width: 1200px;
+             margin: 0 auto;
+             overflow: hidden;
+             padding-top: 15px;
+         }
+         /* Contenedor de la foto */
+         
+         .menu__fotos {
+             width: 100%;
+             max-width: 1200px;
+             overflow: hidden;
+             object-fit: cover;
+             margin: 0;
+         }
+         
+         .fotos__menuu {
+             display: inline-block;
+             padding: 0px;
+             width: 100%;
+             padding: 10px 0;
+         }
+         /* ******************************************************************************************** */
+         
+         @media (min-width:1000px) {
+             /* Empieza seccion 2 de main fotos principales */
+             .menu__fotos {
+                 display: flex;
+                 flex-wrap: wrap;
+                 justify-content: space-between;
+                 align-items: center;
+                 width: 100%;
+                 overflow: hidden;
+                 object-fit: cover;
+                 margin: 0 auto;
+             }
+             /* este es la clase de las fotos */
+             .fotos__menuu {
+                 display: block;
+                 padding: 0px;
+                 width: 50%;
+                 padding: 20px;
+                 object-fit: cover;
+                 border-radius: 30px;
+                 -webkit-border-radius: 30px;
+                 -moz-border-radius: 30px;
+                 -ms-border-radius: 30px;
+                 -o-border-radius: 30px;
+             }
+             /* llave del contenedor 1000px */
+         }

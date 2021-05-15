@@ -1,0 +1,35 @@
+  .content__redes {
+      position: fixed;
+      left: 0;
+      top: 450px;
+      z-index: 2000;
+  }
+  
+  .content__redes ul {
+      list-style: none;
+  }
+  
+  .content__redes ul li a {
+      display: inline-block;
+      background: black;
+      padding: 10px 15px;
+      text-decoration: none;
+      color: #fafafa;
+  }
+  
+  .content__redes ul li .icon-facebook {
+      background: #3b5998;
+  }
+  
+  .content__redes ul li .icon-instagram {
+      background: #f76100;
+  }
+  
+  .content__redes ul li .icon-whatsapp {
+      background: #4AC959;
+  }
+  
+  .content__redes ul li a:hover {
+      padding: 10px 30px;
+      background: black;
+  }

@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oregano&display=swap');
+
+/* contenido del todo el header */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', 'Oregano', sans-serif;
+    font-size: 16px;
+}
+
+.contenedor {
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+    overflow: hidden;
+    height: auto;
+    padding: 10px;
+}
+
+
+/* modificacion del contenedor del contenido */
+
+.somos__contenedor {
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+.titulo__texto {
+    color: #7b1515;
+    font-size: 1.25rem;
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: 700;
+    font-family: Oregano;
+}
+
+.contenedor__textos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.parrafo__textos {
+    width: 100%;
+    line-height: 35px;
+    font-size: 20px;
+    font-weight: 300;
+    padding-bottom: 30px;
+}
+
+.parrafo__textos a {
+    display: inline-block;
+    font-size: 20px;
+    color: #7b1515;
+    weight: bold;
+}
+
+.contenedor__foto {
+    position: relative;
+}
+
+.foto {
+    position: relative;
+    width: 90%;
+    object-fit: cover;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.foto:hover {
+    transition: 1;
+    -webkit-transition: ;
+    -moz-transition: ;
+    -ms-transition: ;
+    -o-transition: ;
+}
+
+
+/* configuracion de mapa */
+
+.mapa {
+    width: 100%;
+    border: 5px solid #caccd1;
+}
+
+.mapa:hover {
+    border: 5px solid #7b1515;
+    transition: 1;
+    -webkit-transition: ;
+    -moz-transition: ;
+    -ms-transition: ;
+    -o-transition: ;
+}
+
+
+/* ************************************************************************************************************************************************************ */
+
+
+/* inicia configuracion para computadora 1000px */
+
+@media (min-width:1000px) {
+    .contenedor__textos {
+        width: 100%;
+        margin: auto 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .titulo__texto {
+        margin: auto 0px;
+        font-family: Oregano;
+        color: #7b1515;
+        font-size: 55px;
+        margin-top: 20px;
+        text-align: center;
+        padding-bottom: 40px;
+        font-weight: 400;
+    }
+    .parrafo__textos {
+        /* margin: auto 0; */
+        width: 40%;
+        font-family: Oregano;
+        line-height: 35px;
+        font-size: 30px;
+        font-weight: 300;
+        padding-bottom: 30px;
+    }
+    .foto {
+        order: -1;
+        width: 45%;
+        object-fit: cover;
+        overflow: hidden;
+        margin-bottom: 30px;
+    }
+    .mapa {
+        width: 100%;
+        border: 5px solid #caccd1;
+        height: 300px;
+        margin: 2.5rem 0rem;
+    }
+}
+
+
+/* Configuracion de Barra de redes sociales lado izquierdo */
+
+.content__redes {
+    position: fixed;
+    left: 0;
+    top: 450px;
+    z-index: 2000;
+}
